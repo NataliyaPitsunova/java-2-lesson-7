@@ -68,10 +68,10 @@ public class ClientHandler {
     private void readMessages() throws IOException {
         while (true) {
             String messageInChat = inputStream.readUTF();
-         /* if (messageInChat.startsWith("/w")) {
+        if (messageInChat.startsWith("/w")) {
                 String[] output = messageInChat.split(" ", 3);
                 server.privateMessage(output[1], nickName + ": "+ output[2]);
-            } else {*/
+            } else {
                 System.out.println("от " + nickName + ": " + messageInChat);
                 if (messageInChat.equals(ServerCommandConstants.SHUTDOWN)) {
                     return;
@@ -80,7 +80,7 @@ public class ClientHandler {
             }
 
         }
-/*    }*/
+  }
 
 
 
