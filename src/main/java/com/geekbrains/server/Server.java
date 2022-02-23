@@ -56,13 +56,13 @@ public class Server {
         }
     }
 
-  /*  public void privateMessage(String nickName, String message) {
+    public void privateMessage(String nickName, String message) {
         for(ClientHandler handler: connectedUsers) {
             if (handler.getNickName().equals(nickName)){
                 handler.sendMessage(message);
             break;}
         }
-    }*/
+    }
 
     public synchronized void addConnectedUser(ClientHandler handler) {
         connectedUsers.add(handler);
